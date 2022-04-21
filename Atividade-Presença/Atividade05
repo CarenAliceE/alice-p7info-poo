@@ -1,1 +1,35 @@
+package br.estacio.objetos.exemplos;
+
+public class Bola 
+{
+ // Atributos
+ 
+ String cor;
+ int tamanho;
+ boolean cheia;
+ 
+ // Métodos
+ 
+ void encher()
+ {
+ cheia = true;
+ }
+ 
+ void esvaziar()
+ {
+ cheia = false;
+ }
+ 
+ void pintar(String cor)
+ {
+ this.cor = cor;
+ }
+ 
+ void definirTamanho(int tam)
+ {
+ if (tam > 0)
+ tamanho = tam;
+ }
+ 
+}
 
