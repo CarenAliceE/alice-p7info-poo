@@ -1,35 +1,51 @@
-package br.estacio.objetos.exemplos;
+//ATIVIDADE DE PRESENÇA 05//
+//VAGNER BEZERRA E CAREN ALICE//
 
-public class Bola 
-{
- // Atributos
- 
- String cor;
- int tamanho;
- boolean cheia;
- 
- // Métodos
- 
- void encher()
- {
- cheia = true;
- }
- 
- void esvaziar()
- {
- cheia = false;
- }
- 
- void pintar(String cor)
- {
- this.cor = cor;
- }
- 
- void definirTamanho(int tam)
- {
- if (tam > 0)
- tamanho = tam;
- }
- 
-}
+Dominio De Problema
 
+-Mercantil
+
+Entidades
+-Dono Do Mercantil
+-Caixa
+-Empacotador
+-Entregador
+-Fornecedores
+-Cliente
+
+Classes com seus atributo e métodos
+
+Classe Pessoa:
+- Nome
+- CPF
+- E-mail
+- Cargo
+Atributos:
+- cadastrarNome
+- cadastrarCPF
+- cadastrarEmail
+- definirCargo
+
+Classe Produtos:
+Atributos:
+- Nome
+- Marca
+- Modelo
+- Prazo de Validade
+Métodos:
+- cadastrarNome
+- cadastrarMarca
+- cadastrarModelo
+- cadastrarPrazoDeValidade
+
+Classe Fornecedor:
+Atributos:
+- Nome
+- CPF/CNPJ
+- Produto Forcido
+- QuantidadeFornecida
+Métodos:
+- cadastrarNome
+- cadastrarCPF/CNPJ
+- informarProdutoFornecido
+- informarQuantidadeFornecida
