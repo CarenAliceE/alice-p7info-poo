@@ -1,0 +1,21 @@
+var  meusNúmeros  =  [ ] ;
+var  controle  =  0 ;
+enquanto  ( controle  <  6 )  {
+    var  v1  =  Math . andar ( Math . random ( )  *  10 ) ;
+    var  v2  =  Math . andar ( Math . random ( )  *  10 ) ;
+    var  num  =  v1  *  v2 ;
+    if  ( num  <=  60  &&  num  !=  0 )  {
+        meusNúmeros . push ( num ) ;
+        controle ++ ;
+    }
+}
+for  ( var  cont  =  0 ;  cont  <  6 ;  cont ++ )  {
+    for  ( var  i  =  0 ;  i  <  6 ;  i ++ )  {
+        if  ( myNumbers [ i ]  >  myNumbers [ i  +  1 ] )  {
+            var  temp  =  meusNúmeros [ i ] ;
+            meusNúmeros [ i ]  =  meusNúmeros [ i  +  1 ] ;
+            meusNúmeros [ i  +  1 ]  =  temp ;
+        }
+    }
+}
+consola . log ( meuNúmeros ) ;
