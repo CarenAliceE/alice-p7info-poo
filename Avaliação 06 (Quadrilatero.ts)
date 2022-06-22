@@ -1,0 +1,19 @@
+import  { Ponto }  de  './Ponto'
+exportar  classe  Quadrilátero {
+     pontoA privado : Ponto
+     pontoB privado : Ponto
+
+    construtor ( PontoA : Ponto ,  PontoB : Ponto ) {
+        isso . pontoA  =  PontoA
+        isso . pontoB  =  PontoB
+    }
+
+    pertencerArea ( ponto : Ponto ) : boolean {
+        if ( this . pontoA . getX  <=  ponto . getX  &&  ponto . getX  <=  this . pontoB . getX
+             &&  isso . pontoB . getY  <=  ponto . getY  &&  ponto . getY  <=  this . pontoA . getY   ) {
+                 retornar  verdadeiro
+             } senão {
+                 retornar  falso
+             }
+    }
+}
